@@ -1,0 +1,18 @@
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s ease-in-out;
+  line-height: 2.5em;
+  font-size: 1.5em;
+  color: #bfbfbf;
+  transform-origin: left;
+}
+
+li:hover {
+  transform: scale(1.8);
+  color: white;
+}
+
+.Selected {
+  transform: scale(1.8);
+  color: white;
+}

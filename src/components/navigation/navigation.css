@@ -4,24 +4,42 @@
   /*background-color: red;*/
   height: 100vh;
   width: 15vw;
+  max-width: 200px;
   display: flex;
+  overflow: show;
 }
 
-ul {
-  align-content: center;
+/*Message box temporarily disabled*/
+.Message {
+  display: none;
+  position: absolute;
+  text-align: left;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  width: 100%;
+  height: auto;
+  overflow: wrap;
   margin: auto;
 }
 
-li {
-  font-family: Arial, Helvetica, sans-serif;
-  list-style-type: none;
-  transition: all 0.25s ease-in-out;
-  line-height: 2em;
-  font-size: 2em;
-  color: #e3e3e3;
+h1 {
+  margin: auto;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
 }
 
-li:hover {
-  transform: scale(1.5);
-  color: white;
+h2 {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ed801a;
+}
+
+ul {
+  /*align-content: center;*/
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+
+  margin: auto;
+  list-style-type: none;
 }
