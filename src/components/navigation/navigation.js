@@ -1,4 +1,4 @@
-import { Component, useRef } from "react";
+import { Component } from "react";
 import "./navigation.css";
 import NavItem from "./navItem";
 
@@ -14,6 +14,7 @@ class Navigation extends Component {
 
   handler(name) {
     this.setState({selected: name})
+    this.props.handler(name)
   }
 
   render () {
@@ -23,7 +24,7 @@ class Navigation extends Component {
       <>
         {items.map(item => {
           if( this.state.selected === item.name ){
-           return <NavItem title={item.name} key={item.name} handler={this.handler} style="selected"/>
+           return <NavItem title={item.name} key={item.name} handler={this.handler} display="selected"/>
           } else {
               return <NavItem title={item.name} key={item.name} handler={this.handler}/>
           }
@@ -33,11 +34,6 @@ class Navigation extends Component {
 
     
     return <div className="Navigation">
-      <div className="Message">
-        <h1>Hi!</h1>
-        <h2>I'm Lachie</h2>
-      </div>
-
       <ul >
         <NavList items={navItems}/>
       </ul>

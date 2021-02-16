@@ -16,7 +16,7 @@ class NavItem extends React.Component {
   }
 
   render() {
-    if (this.props.style) {
+    if (this.props.display) {
       return (
         <li className="Selected" onClick={this.handleClick}>
           {this.props.title}

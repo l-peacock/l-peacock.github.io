@@ -1,10 +1,10 @@
 import "./content.css";
 
-function Content() {
-  // list items are placeholders. Replace with menu-item components once built
+function Content(props) {
+  //console.log(props)
   return (
     <div className="Content">
-      <p>Content goes here!</p>
+      <p>Current page is: {props.page}</p>
     </div>
   );
 }
