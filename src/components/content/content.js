@@ -23,7 +23,7 @@ function Content(props) {
 const content = {
   /*home: `This is the content for the HOME page.
   This is just some basic text. Will experiment with other layouts later.`,*/
-  home: <Home message="Hi! I'm Lachie"/>,
+  home: <Home />,
   'about me': <AboutMe />,
   socials: <Socials />,
   portfolio: <Portfolio />,

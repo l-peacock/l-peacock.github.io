@@ -1,4 +1,14 @@
-.Home, h2 {
+/**
+Home Section
+*/
+.Home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Text, h2 {
     color: wheat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,4 +16,75 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
+  font-weight: 350;
+}
+
+.Text, h3 {
+    color: rgb(185, 185, 185);
+    font-weight: 150;
+}
+
+.Photo {
+    margin-left: 2em;
+}
+
+.PhotoImg {
+    
+    max-width: 7.5em;
+    border-radius: 75%;
+}
+
+/**
+About Me Section
+*/
+
+.AboutMe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.AboutMeText {
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    /*max-width: 70vw;*/
+}
+
+/**
+Socials Section
+*/
+
+.SocialItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.SocialImage {
+    height: 1.5em;
+}
+
+.SocialLink {
+    transition: all 0.2s ease-in-out;
+    color: #bfbfbf;
+    text-decoration: none;
+    margin-left: 0.5em;
+    width: 100%;
+    font-weight: 150;
+}
+
+.SocialLink:hover{
+    color: white;
+}
+
+.SocialLink::selection{
+    color: white;
 }

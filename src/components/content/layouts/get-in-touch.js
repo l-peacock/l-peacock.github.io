@@ -4,7 +4,7 @@ function GetInTouch(props) {
 
   return (
     <div className="GetInTouch">
-      <h2>Get In Touch</h2>
+      <p>Get in touch form</p>
     </div>
   );
 }

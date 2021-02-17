@@ -2,7 +2,7 @@ import { Component } from "react";
 import "./navigation.css";
 import NavItem from "./navItem";
 
-const navItems = [{"name":"Home"},{"name":"About Me"},{"name":"Socials"},{"name":"Portfolio"},{"name":"Get In Touch"}]
+const navItems = [{"name":"Home"},{"name":"About Me"},{"name":"Portfolio"},{"name":"Socials"},{"name":"Get In Touch"}]
 class Navigation extends Component {
 
   constructor(props) {
