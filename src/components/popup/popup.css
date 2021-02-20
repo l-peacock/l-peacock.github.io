@@ -1,0 +1,171 @@
+/**
+* Main popup action button styling
+*
+* NOTE: All instanced of 'expanded' attribute are 0 = closed, 1 = opened
+*/
+
+.Popup{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    color: white;
+    background: rgb(18,103,172);
+    background: linear-gradient(90deg, rgba(18,103,172,1) 0%, rgba(35,88,180,1) 35%, rgba(0,75,145,1) 100%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    bottom: 50px;
+    right: 50px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 70px;
+    width: 40vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.Popup[expanded="1"]{
+    height: 50vh;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    flex-direction: column-reverse;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin: 0px 0px 0px 0px;
+    /*transform: scale(1);*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Popup{
+        height: 50px;
+        width: 10vw;
+    }
+    
+    .Popup:hover{
+        transform: scale(1.05);
+    }
+    
+    .Popup[expanded="1"]{
+        height: auto;
+        width: 400px;
+        bottom: 50px;
+        right: 50px;
+        flex-direction: row;
+        justify-content:center;
+        align-items: flex-start;
+        transform: scale(1.05);
+    }
+}
+
+
+
+.PopupTitle[expanded="1"]{
+    display: none;
+}
+
+/**
+* Popup content styling
+*/
+.PopupContent{
+    transition: all 0.2s ease-in-out;
+}
+.PopupContent[expanded="0"]{
+    display: none;
+    transform: scale(0);
+}
+
+.PopupContent[expanded="1"]{
+    /*display: block;*/
+    transform: scale(1);
+    margin-top: 15px;
+    width: 90%;
+    font-weight: 275;
+    font-size: 0.9em;
+    animation: fadeIn ease 0.75s;
+    -webkit-animation: fadeIn ease 0.75s;
+        
+}
+
+.CreditLink {
+    text-decoration: underline;
+    color: rgb(211, 211, 211);
+    font-weight: 400;
+}
+
+/**
+* Popup open and close styling
+*/
+.PopupOpenButton[expanded="0"]{
+    width: 2em;
+    height: auto;
+    background: none;
+    color: white;
+    top: auto;
+    bottom: auto;
+    margin-left: 5px;
+}
+
+.PopupOpenButton[expanded="1"]{
+    display: none;
+}
+    
+.PopupOpenButton[expanded="1"]:focus{
+    outline: none;
+}
+
+
+.PopupCloseButton[expanded="0"]{
+    display: none;
+}
+.PopupCloseButton[expanded="1"]{
+    font-size: 1.5em;
+    height: auto;
+    width: auto;
+    position:relative;
+    background: none;
+    color: white;
+    border: none;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    float: right;
+    right: 0;
+    margin-right: 0px;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+}
+.PopupCloseButton[expanded="1"]:focus{
+    outline: none;
+}
+
+
+/**
+* Text fade in animation
+*/
+
+@keyframes fadeIn {
+0% {opacity:0; scale: 0;}
+100% {opacity:1; scale: 1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0; scale: 0;}
+100% {opacity:1; scale: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0; scale: 0;}
+100% {opacity:1; scale: 1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0; scale: 0;}
+100% {opacity:1; scale: 1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0; scale: 0;}
+100% {opacity:1; scale: 1;}
+}
+
+

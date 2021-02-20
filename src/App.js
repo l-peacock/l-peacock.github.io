@@ -1,6 +1,8 @@
 //import logo from "./logo.svg";
 import Navigation from "./components/navigation/navigation";
 import Content from "./components/content/content";
+import Popup from "./components/popup/popup";
+
 //import {useRef} from "react";
 import "./App.css";
 import React, { Component } from "react";
@@ -18,12 +20,17 @@ class App extends Component {
     this.setState({selected: name})
   }
 
+  /*popUpHandler(){
+
+  } */
+
   render () {
     return <div className="App">
       <Navigation handler={this.handler} /*ref={setNavigationBarRef}*/ />
       <header className="App-content">
         <Content page={this.state.selected}/>
       </header>
+      <Popup />
     </div>
   }
 
