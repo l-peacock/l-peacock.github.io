@@ -12,7 +12,7 @@ function Content(props) {
 
   return (
     <div className="Content">
-      <p>{content[key]}</p>
+      {content[key]}
     </div>
   );
 }

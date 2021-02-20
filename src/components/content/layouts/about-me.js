@@ -12,6 +12,8 @@ function AboutMe(props) {
             <p className="AboutMeText">I have over 3 years professional experience, and have
             worked on a range of projects with emerging technologies, such as Chatbots and Robotic Process Automation.
             My personal projects have seen me branch out to Front-End Development and Mobile Applications.</p>
+
+            <p className="AboutMeText">Besides technology, I'm a keen musician and music-lover.</p>
         </div>
     </div>
   );

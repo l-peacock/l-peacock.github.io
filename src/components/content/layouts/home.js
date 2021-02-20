@@ -11,7 +11,7 @@ function Home(props) {
         </div>
 
         <div className="Photo">
-            <img src={lachlan_peacock_head} alt="A photo of me, Lachie" class="PhotoImg"/>
+            <img src={lachlan_peacock_head} alt="me, Lachie" className="PhotoImg"/>
         </div>
     </div>
     
