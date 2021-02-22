@@ -1,16 +1,81 @@
-.Navigation {
+.MenuButton[toggled="0"] {
+  position: fixed;
+  /*display: block;*/
+  width: 5em;
+}
+
+.MenuButton[toggled="1"] {
+  display: none;
+}
+
+.Navigation[toggled="0"]{
   float: left;
+  height: 0%;
+  width: 0%;
+  /*max-width: 200px;*/
+  overflow: none;
+  transition: width ease 0.5s;
+}
+
+.Navigation[toggled="1"]{
+  width: 100vw;
+  height: 100vh;
   position: absolute;
+  float: left;
+  display: flex;
+  top: 0;
+  bottom: 0;
   background-color: #33363b;
   border-right-color: #56575a;
   border-right-width: 2px;
   border-right-style:ridge;
-  height: 100vh;
-  width: 18vw;
-  max-width: 200px;
-  display: flex;
-  overflow: show;
+  z-index: 900;
+  transition: width ease 0.5s;
 }
+
+.NavListParent[toggled="0"]{
+  visibility: hidden;
+  display: absolute;
+  /*width: 0%;*/
+  transition: width ease 0.6s;
+  transform: translateX(-500%);
+  /*margin-left: auto;*/
+}
+
+.NavListParent[toggled="1"]{
+  display: absolute;
+  /*font-size: auto;*/
+  transition: all ease-in-out 0.6s;
+  transform: translateX(0%);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .MenuButton {
+    display: none;
+  }
+
+  .Navigation{
+    position: relative;
+    background-color: #33363b;
+    border-right-color: #56575a;
+    border-right-width: 2px;
+    border-right-style:ridge;
+    display: flex;
+    min-height: 100vh;
+    min-width: 18vw;
+  }
+
+  .NavListParent[toggled="0"]{
+    display: absolute;
+    visibility: visible;
+    width: auto;
+    transform: translateX(0%);
+  }
+
+}
+
+
 
 /*Message box temporarily disabled*/
 .Message {
@@ -45,3 +110,4 @@ ul {
   margin: auto;
   list-style-type: none;
 }
+

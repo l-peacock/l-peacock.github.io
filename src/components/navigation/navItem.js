@@ -18,12 +18,12 @@ class NavItem extends React.Component {
   render() {
     if (this.props.display) {
       return (
-        <li className="Selected" onClick={this.handleClick}>
+        <li className="Selected" onClick={this.handleClick} toggled={this.props.toggled}>
           {this.props.title}
         </li>
       );
     } else {
-      return <li onClick={this.handleClick}>{this.props.title}</li>;
+      return <li onClick={this.handleClick} toggled={this.props.toggled}>{this.props.title}</li>;
     }
   }
 }

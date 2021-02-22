@@ -1,4 +1,6 @@
 .Content {
+    position:relative;
+    min-width: 60vw;
     max-width: 80vw;
-    width: auto;
+    width: 100%;
 }
