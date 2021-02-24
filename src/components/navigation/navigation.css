@@ -1,18 +1,24 @@
 .MenuButton[toggled="0"] {
   position: fixed;
   /*display: block;*/
-  width: 5em;
+  height: 10vh;
 }
 
 .MenuButton[toggled="1"] {
   display: none;
 }
 
-.MenuButtonParent{
+.MenuButtonParent[toggled="0"]{
   background-color: #33363b;
   border-bottom-color: #56575a;
+  width: 100vw;
+  height: 10vh;
   border-bottom-width: 2px;
   border-bottom-style: ridge;
+}
+
+.MenuButtonParent[toggled="1"]{
+  display: none;
 }
 
 .Navigation[toggled="0"]{
@@ -58,6 +64,10 @@
 
 
 @media only screen and (min-width: 768px) {
+  .MenuButtonParent{
+    display: none;
+  }
+
   .MenuButton {
     display: none;
   }

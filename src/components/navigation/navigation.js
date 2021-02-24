@@ -35,7 +35,7 @@ class Navigation extends Component {
 
     
     return <div className="Navigation" toggled={this.state.menuToggle}>
-      <div className="MenuButtonParent">
+      <div className="MenuButtonParent" toggled={this.state.menuToggle}>
         <img src={menu} className="MenuButton" onClick={() => this.setState({selected: this.state.selected, menuToggle: "1"})} toggled={this.state.menuToggle}/>
       </div>
       <ul className="NavListParent" toggled={this.state.menuToggle}>
