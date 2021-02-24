@@ -25,7 +25,6 @@
   float: left;
   height: 0%;
   width: 0%;
-  /*max-width: 200px;*/
   overflow: none;
   transition: width ease 0.5s;
 }
@@ -60,6 +59,7 @@
   /*font-size: auto;*/
   transition: all ease-in-out 0.6s;
   transform: translateX(0%);
+  justify-content: center;
 }
 
 
@@ -80,7 +80,8 @@
     border-right-style:ridge;
     display: flex;
     min-height: 100vh;
-    min-width: 18vw;
+    min-width: 200px;
+    max-width: 200px;
   }
 
   .NavListParent[toggled="0"]{
@@ -120,11 +121,17 @@ h2 {
 }
 
 ul {
-  text-align: left;
+  text-align: center;
   margin-left: 0px;
   padding-left: 0px;
 
   margin: auto;
   list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    text-align: left;
+  }
 }
 

@@ -25,14 +25,16 @@ Home Section
     font-weight: 150;
 }
 
-.Photo {
-    margin-left: 2em;
-}
-
 .PhotoImg {
     
     max-width: 7.5em;
     border-radius: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+    .Photo {
+        margin-left: 2em;
+    }
 }
 
 /**
@@ -62,6 +64,7 @@ About Me Section
         text-align: left;
         max-width: 65vw;
     }
+
 }
 
 /**
