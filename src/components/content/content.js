@@ -8,7 +8,7 @@ import GetInTouch from "./layouts/get-in-touch";
 function Content(props) {
   
   let key = props.page.toLowerCase();
-  console.log(key)
+  //console.log(key)
 
   return (
     <div className="Content">
