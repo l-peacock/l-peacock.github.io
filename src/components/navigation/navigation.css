@@ -8,6 +8,13 @@
   display: none;
 }
 
+.MenuButtonParent{
+  background-color: #33363b;
+  border-bottom-color: #56575a;
+  border-bottom-width: 2px;
+  border-bottom-style: ridge;
+}
+
 .Navigation[toggled="0"]{
   float: left;
   height: 0%;

@@ -3,7 +3,7 @@ import "./navigation.css";
 import NavItem from "./navItem";
 import menu from "./menu.svg";
 
-const navItems = [{"name":"Home"},{"name":"About Me"},{"name":"Portfolio"},{"name":"Socials"},{"name":"Get In Touch"}]
+const navItems = [{"name":"Home"},{"name":"About Me"},/*{"name":"Portfolio"},*/{"name":"Socials"},/*{"name":"Get In Touch"}*/]
 class Navigation extends Component {
 
   constructor(props) {
@@ -35,7 +35,9 @@ class Navigation extends Component {
 
     
     return <div className="Navigation" toggled={this.state.menuToggle}>
-      <img src={menu} className="MenuButton" onClick={() => this.setState({selected: this.state.selected, menuToggle: "1"})} toggled={this.state.menuToggle}/>
+      <div className="MenuButtonParent">
+        <img src={menu} className="MenuButton" onClick={() => this.setState({selected: this.state.selected, menuToggle: "1"})} toggled={this.state.menuToggle}/>
+      </div>
       <ul className="NavListParent" toggled={this.state.menuToggle}>
         <NavList items={navItems} />
       </ul>
