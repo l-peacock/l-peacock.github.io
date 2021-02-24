@@ -16,9 +16,9 @@ function Popup(props){
             <a href="https://iconscout.com/icons/linkedin" target="blank" className="CreditLink">Linkedin Icon</a> by <a href="https://iconscout.com/contributors/luc-chaffard" className="CreditLink">Luc Chaffard</a><br />
             <a href="https://iconscout.com/icons/spotify" target="blank" className="CreditLink" >Spotify Logo Icon</a> by <a href="https://iconscout.com/contributors/alexis-doreau" target="blank" className="CreditLink">Alexis Doreau</a><br />
             <a href="https://iconscout.com/icons/salesforce" target="blank" className="CreditLink">Salesforce Icon</a> by <a href="https://iconscout.com/contributors/icons8" target="blank" className="CreditLink">Icons8</a><br />
-            <a href="https://iconscout.com/icons/up" target="blank" className="CreditLink">Up Icon</a> by <a href="https://iconscout.com/contributors/ricki-tri-putra" target="blank" className="CreditLink">Ricki Tri Putra</a>
-            <a href="https://iconscout.com/icons/menu-1768000" target="blank" className="CreditLink">Menu Icon</a> by <a href="https://iconscout.com/contributors/eva-icons" target="blank" className="CreditLink">Eva Icons</a>
-            <br /><br />
+            <a href="https://iconscout.com/icons/up" target="blank" className="CreditLink">Up Icon</a> by <a href="https://iconscout.com/contributors/ricki-tri-putra" target="blank" className="CreditLink">Ricki Tri Putra</a><br />
+            <a href="https://iconscout.com/icons/menu-1768000" target="blank" className="CreditLink">Menu Icon</a> by <a href="https://iconscout.com/contributors/eva-icons" target="blank" className="CreditLink">Eva Icons</a><br /
+            ><br />
             © Lachlan Peacock {year}
             </p>
             <button className="PopupCloseButton" onClick={()=> setSelected("0")} expanded={selected}>X</button>

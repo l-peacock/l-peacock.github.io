@@ -1,3 +1,8 @@
+# My Portfolio App
+A homepage designed and developed by Lachlan Peacock. This is a React App, created using [Create React App](https://github.com/facebook/create-react-app).
+
+The navigation system currently is dependent on the name of the item in navigation.js and content.js matching.
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
