@@ -9,6 +9,7 @@
 }
 
 .MenuButtonParent[toggled="0"]{
+  position: fixed;
   background-color: #33363b;
   border-bottom-color: #56575a;
   width: 100vw;
