@@ -18,7 +18,7 @@ function Popup(props){
             <a href="https://iconscout.com/icons/salesforce" target="blank" className="CreditLink">Salesforce Icon</a> by <a href="https://iconscout.com/contributors/icons8" target="blank" className="CreditLink">Icons8</a><br />
             <a href="https://iconscout.com/icons/up" target="blank" className="CreditLink">Up Icon</a> by <a href="https://iconscout.com/contributors/ricki-tri-putra" target="blank" className="CreditLink">Ricki Tri Putra</a><br />
             <a href="https://iconscout.com/icons/menu-1768000" target="blank" className="CreditLink">Menu Icon</a> by <a href="https://iconscout.com/contributors/eva-icons" target="blank" className="CreditLink">Eva Icons</a><br />
-            <a href="https://iconscout.com/icons/person" target="blank" className="CreditLink">Person Icon</a> by <a href="https://iconscout.com/contributors/google-inc" target="blank">Google Inc.</a><br />
+            <a href="https://iconscout.com/icons/person" target="blank" className="CreditLink">Person Icon</a> by <a href="https://iconscout.com/contributors/google-inc" target="blank" className="CreditLink">Google Inc.</a><br />
             <br />
             © Lachlan Peacock {year}
             </p>
